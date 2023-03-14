@@ -1,0 +1,15 @@
+server:
+  port: 8081
+Spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/serverdb
+  jpa:
+    hibernate:
+      ddl-auto: create
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.mysql8Dialect
+          format_sql: true
+        show-sql: true
